@@ -94,7 +94,7 @@ def buscar_produto(produto_id: int):
         cur.execute("SELECT * FROM produtos WHERE id = %s", (produto_id,))
         produto = cur.fetchone()
         if produto is None:
-            raise HTTPException(status_code=404, detail="Produto não encontrado")
+            raise HTTPException(status_code=404, detail="Produto não encontrado 1")
         return produto
     finally:
         cur.close()
