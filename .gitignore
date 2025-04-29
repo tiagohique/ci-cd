@@ -32,6 +32,7 @@ venv/
 *.swp
 *.swo
 .DS_Store
+__pycache__/
 
 # Logs
 *.log
